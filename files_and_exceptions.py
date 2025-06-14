@@ -32,9 +32,9 @@ def process_dict(data):
     :return: None
     """
     for producto, montos in data.items():
-        total = sum(montos)
+        total = round(sum(montos), 2)
         if len(montos) > 0:
-            promedio = total / len(montos)
+            promedio = round(total / len(montos), 2)
         else:
             promedio = 0
-        print(f"{producto}: ventas totales ${total:.2f}, promedio ${promedio:.2f}")
+        print(f"{producto}: ventas totales ${total}, promedio ${promedio}")
