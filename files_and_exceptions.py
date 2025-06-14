@@ -6,7 +6,7 @@ def read_file_to_dict(filename):
     :raises: FileNotFoundError - si el archivo no existe.
     """
     ventas = {}
-    with open("filename", "r") as file:
+    with open(filename, "r") as file:
         contenido = file.read().strip()
         if not contenido:
             return ventas
