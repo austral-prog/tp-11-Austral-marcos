@@ -26,12 +26,13 @@ def read_file_to_dict(filename):
 
 
 def process_dict(data):
-    """Para cada producto, imprime el total de ventas y el promedio, en el orden natural del diccionario.
+    """
+    Para cada producto, imprime el total de ventas y el promedio, en el orden natural del diccionario.
 
     :param data: dict - diccionario a procesar.
     :return: None
     """
-    for producto, ventas in data.items():
-        total = sum(ventas)
-        promedio = total / len(ventas) if ventas else 0
-        print(f"{producto}: Total ventas = {total}, Promedio = {promedio:.2f}")
+    for producto, valores in data.items():
+        total = sum(valores)
+        promedio = total / len(valores) if valores else 0.0
+        print(f"{producto}: Total: {total:.2f}, Promedio: {promedio:.2f}")
