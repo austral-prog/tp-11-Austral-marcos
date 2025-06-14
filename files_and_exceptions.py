@@ -34,7 +34,8 @@ def process_dict(data):
     for producto, montos in data.items():
         total = sum(montos)
         if len(montos) > 0:
-            promedio = round(total / len(montos), 2)
+            promedio = total / len(montos)
+            promedio = round(promedio, 2)
         else:
             promedio = round(0, 2)
         total = round(sum(montos), 2)
