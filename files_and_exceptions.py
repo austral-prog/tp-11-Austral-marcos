@@ -31,3 +31,10 @@ def process_dict(data):
     :param data: dict - diccionario a procesar.
     :return: None
     """
+    for producto, valores in data.items():
+        total = sum(valores)
+        if valores:
+            promedio = total / len(valores)
+        else:
+            promedio = 0.0
+        print(f"{producto}: Total: {total:.2f}, Promedio: {promedio:.2f}")
