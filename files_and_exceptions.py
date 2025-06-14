@@ -37,4 +37,4 @@ def process_dict(data):
             promedio = total / len(montos)
         else:
             promedio = 0
-        print(f"{producto}: ventas totales ${total:.2}, promedio ${promedio:.2}")
+        print(f"{producto}: ventas totales ${total:.2f}, promedio ${promedio:.2f}")
