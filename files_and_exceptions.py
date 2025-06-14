@@ -38,4 +38,4 @@ def process_dict(data):
         else:
             promedio = 0
         total = round(sum(montos), 2)
-        print(f"{producto}: ventas totales ${total:}, promedio ${promedio:}")
+        print(f"{producto}: ventas totales ${total}, promedio ${promedio}")
